@@ -440,6 +440,23 @@ https://github.com/Nino-chan02/SelfBotz`
               fs.writeFileSync('./database/scommand.json', JSON.stringify(_scommand))
               textImg("Done!")
               break
+		case 'neko':
+					var selepbot = {
+					contextInfo: {
+					participant: itsme,
+					quotedMessage: {
+					extendedTextMessage: {
+					text: split,
+									}
+								}
+							}
+						}
+					gatauda = body.slice(6)
+					nino.sendMessage(from, mess.wait, MessageType.text, selepbot)
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/neko?apikey=Tobzzz17`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, { caption: ` NEKO!`, quoted: mek })
+					break
        case 'listcmd':
               teksnyee = `\`\`\`「 LIST STICKER CMD 」\`\`\``
               cemde = [];
