@@ -419,7 +419,7 @@ module.exports = nino = async (nino, mek) => {
 
 *Source Code:*
 https://github.com/LitRHap/SelfBotz-Ahmad`
-               nino.sendMessage(from, menu, text, {quoted: mek, contextInfo: {mentionedJid: [sender], externalAdReply: { title: 'Nino Bot', thumbnailUrl: 'https://telegra.ph/file/ad408bff29a90b6627e6f.jpg', sourceUrl: 'https://github.com/Nino-chan02/' }}})
+               nino.sendMessage(from, menu, text, {quoted: mek, contextInfo: {mentionedJid: [sender], externalAdReply: { title: 'Nino Bot', thumbnailUrl: 'https://telegra.ph/file/ad408bff29a90b6627e6f.jpg', sourceUrl: 'https://github.com/LitRHap/' }}})
                break
 //------------------< Sticker Cmd >-------------------
            case 'addcmd': 
@@ -1107,7 +1107,7 @@ _*Tunggu Proses Upload Media......*_`
           case 'sourcecode': 
           case 'sc': 
           case 'src':
-              textImg(`Bot ini menggunakan sc : https://github.com/Nino-chan02/SelfBotz`)
+              textImg(`Bot ini menggunakan sc : https://github.com/LitRHap/SelfBotz-Ahmad`)
               break
           case 'q':
               if (!m.quoted) return reply( 'reply pesan!')
