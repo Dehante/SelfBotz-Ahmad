@@ -418,7 +418,7 @@ module.exports = nino = async (nino, mek) => {
 • ${prefix}tebakgambar
 
 *Source Code:*
-https://github.com/Nino-chan02/SelfBotz`
+https://github.com/LitRHap/SelfBotz-Ahmad`
                nino.sendMessage(from, menu, text, {quoted: mek, contextInfo: {mentionedJid: [sender], externalAdReply: { title: 'Nino Bot', thumbnailUrl: 'https://telegra.ph/file/ad408bff29a90b6627e6f.jpg', sourceUrl: 'https://github.com/Nino-chan02/' }}})
                break
 //------------------< Sticker Cmd >-------------------
@@ -440,23 +440,6 @@ https://github.com/Nino-chan02/SelfBotz`
               fs.writeFileSync('./database/scommand.json', JSON.stringify(_scommand))
               textImg("Done!")
               break
-		case 'neko':
-					var selepbot = {
-					contextInfo: {
-					participant: itsme,
-					quotedMessage: {
-					extendedTextMessage: {
-					text: split,
-									}
-								}
-							}
-						}
-					gatauda = body.slice(6)
-					nino.sendMessage(from, mess.wait, MessageType.text, selepbot)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/neko?apikey=Tobzzz17`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, { caption: ` NEKO!`, quoted: mek })
-					break
        case 'listcmd':
               teksnyee = `\`\`\`「 LIST STICKER CMD 」\`\`\``
               cemde = [];
@@ -1118,7 +1101,7 @@ _*Tunggu Proses Upload Media......*_`
 }
               break
           case 'infoig':
-              teks = `Jangan Lupa Follow Ig Owner Ya : https://www.instagram.com/nino.chan26/`
+              teks = `Jangan Lupa Follow Ig Owner Ya : https://www.instagram.com/alif._.t/`
               nino.sendMessage(from, teks, text, { quoted : mek })
               break
           case 'sourcecode': 
